@@ -125,7 +125,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/ashutosh_das_professional_resume.pdf"
+              href="/professional-web_dev_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-gray-300 bg-gray-900 hover:bg-gray-800 hover:text-white border border-gray-850 hover:border-gray-700 rounded-xl transition-all duration-200"
