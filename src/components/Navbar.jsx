@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Terminal } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X, Terminal } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState("about");
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 120; // Offset for sticky navbar
-      
+
       for (const link of navLinks) {
         const section = document.querySelector(link.href);
         if (section) {
@@ -28,8 +28,8 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -41,7 +41,10 @@ export default function Navbar() {
             <div className="p-2 bg-blue-500/10 rounded-lg text-blue-400 border border-blue-500/20">
               <Terminal className="w-5 h-5" />
             </div>
-            <a href="#about" className="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent tracking-tight hover:opacity-95 transition-opacity">
+            <a
+              href="#about"
+              className="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent tracking-tight hover:opacity-95 transition-opacity"
+            >
               Ashutosh Das
             </a>
           </div>
@@ -55,7 +58,9 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 relative py-1 ${
-                    isActive ? 'text-blue-400' : 'text-gray-400 hover:text-gray-200'
+                    isActive
+                      ? "text-blue-400"
+                      : "text-gray-400 hover:text-gray-200"
                   }`}
                 >
                   {link.name}
@@ -66,7 +71,7 @@ export default function Navbar() {
               );
             })}
             <a
-              href="/resume.pdf"
+              href="/ashutosh_das_professional_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 border border-blue-500/30 rounded-lg shadow-md shadow-blue-900/20 transition-all duration-200"
@@ -81,7 +86,11 @@ export default function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-gray-400 hover:text-gray-200 hover:bg-gray-800/50 focus:outline-none"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -98,7 +107,9 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                  isActive ? 'bg-blue-500/10 text-blue-400' : 'text-gray-400 hover:bg-gray-800/30 hover:text-gray-200'
+                  isActive
+                    ? "bg-blue-500/10 text-blue-400"
+                    : "text-gray-400 hover:bg-gray-800/30 hover:text-gray-200"
                 }`}
               >
                 {link.name}
