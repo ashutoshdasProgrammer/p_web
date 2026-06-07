@@ -27,14 +27,14 @@ export default function Hero() {
 
             {/* Image Wrapper */}
             {/* Image Wrapper */}
-<div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-gray-800 bg-gray-900 shadow-2xl flex justify-center items-center">
-  <img
-    src={profileImg}
-    alt="Ashutosh Das"
-    loading="lazy"
-    className="absolute inset-0 w-full h-full object-cover object-[55%] scale-110 transform-gpu transition-transform duration-500 ease-out group-hover:scale-125"
-  />
-</div>
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-gray-800 bg-gray-900 shadow-2xl flex justify-center items-center">
+              <img
+                src={profileImg}
+                alt="Ashutosh Das"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover object-[55%] scale-110 transform-gpu transition-transform duration-500 ease-out group-hover:scale-125"
+              />
+            </div>
           </div>
         </div>
 
@@ -125,7 +125,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/professional_resume.pdf"
+              href="/ashutosh_das_professional_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-gray-300 bg-gray-900 hover:bg-gray-800 hover:text-white border border-gray-850 hover:border-gray-700 rounded-xl transition-all duration-200"
