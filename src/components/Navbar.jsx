@@ -71,7 +71,7 @@ export default function Navbar() {
               );
             })}
             <a
-              href="/professional_web_dev_resume.pdf"
+              href="/my_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 border border-blue-500/30 rounded-lg shadow-md shadow-blue-900/20 transition-all duration-200"
@@ -118,7 +118,7 @@ export default function Navbar() {
           })}
           <div className="pt-2 px-3">
             <a
-              href="/resume.pdf"
+              href="/my_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
