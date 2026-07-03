@@ -7,7 +7,6 @@ export default function Skills() {
       title: 'Backend & Databases',
       icon: <Database className="w-6 h-6 text-blue-400" />,
       skills: [
-        {name: 'Express.js' level: 'Expert'},
         { name: 'Node.js', level: 'Expert' },
         { name: 'Express.js', level: 'Expert' },
         { name: 'MongoDB', level: 'Advanced' },
