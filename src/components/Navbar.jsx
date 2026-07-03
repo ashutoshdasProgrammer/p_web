@@ -118,7 +118,7 @@ export default function Navbar() {
           })}
           <div className="pt-2 px-3">
             <a
-              href="/my_resume.pdf"
+              href="/web_dev_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
